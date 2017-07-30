@@ -1,70 +1,70 @@
-- name: RAD Cassandra Nodes
+- name: Example Nodes
 command: nc -w 5 -z %(host)s %(port)d
 port: 19042
-hosts_url: 'http://casserole.nk.if.example.com/api/v2/radif/radif/cluster-endpoints?format=json&show-instance-ip=true'
+hosts_url: 'http://xyz.example.com/api/v2/radif/radif/cluster-endpoints?format=json&show-instance-ip=true'
 
 - name: Host Authority Dispatchers
 command: nc -w 5 -z %(host)s %(port)d
 port: 2376
 hosts:
 # NK
-- nk11p01if-ztbu01294501.nk.if.example.com
-- nk11p01if-ztbu15184501.nk.if.example.com
-- nk11p01if-ztbu15224501.nk.if.example.com
+- nk11p01if-ztbu01294501.example.com
+- nk11p01if-ztbu15184501.example.com
+- nk11p01if-ztbu15224501.example.com
 
 # ST
-- st13p01if-ztbu15142801.st.if.example.com
-- st13p01if-ztbu15152801.st.if.example.com
-- st13p01if-ztbu15162801.st.if.example.com
+- st13p01if-ztbu15142801.example.com
+- st13p01if-ztbu15152801.example.com
+- st13p01if-ztbu15162801.example.com
 
 # MR
-- mr11p01if-ztbu18041701.mr.if.example.com
-- mr11p01if-ztbu18051701.mr.if.example.com
-- mr11p01if-ztbu18061601.mr.if.example.com
+- mr11p01if-ztbu18041701.example.com
+- mr11p01if-ztbu18051701.example.com
+- mr11p01if-ztbu18061601.example.com
 
 # PV
-- pv34p01if-ztbu11011601.pv.if.example.com
-- pv34p01if-ztbu11021301.pv.if.example.com
-- pv34p01if-ztbu12094201.pv.if.example.com
+- pv34p01if-ztbu11011601.example.com
+- pv34p01if-ztbu11021301.example.com
+- pv34p01if-ztbu12094201.example.com
 
 - name: App Authority Dispatchers
 command: nc -w 5 -z %(host)s %(port)d
 port: 2376
 hosts:
 # NK
-- nk11p01if-ztbu01304401.nk.if.example.com
-- nk11p01if-ztbu15184601.nk.if.example.com
-- nk11p01if-ztbu15224401.nk.if.example.com
+- nk11p01if-ztbu01304401.example.com
+- nk11p01if-ztbu15184601.example.com
+- nk11p01if-ztbu15224401.example.com
 
 # ST
-- st13p01if-ztbu15112801.st.if.example.com
-- st13p01if-ztbu15122801.st.if.example.com
-- st13p01if-ztbu15132801.st.if.example.com
+- st13p01if-ztbu15112801.example.com
+- st13p01if-ztbu15122801.example.com
+- st13p01if-ztbu15132801.example.com
 
 # MR
-- mr11p01if-ztbu18042401.mr.if.example.com
-- mr11p01if-ztbu18052401.mr.if.example.com
-- mr11p01if-ztbu18062401.mr.if.example.com
+- mr11p01if-ztbu18042401.example.com
+- mr11p01if-ztbu18052401.example.com
+- mr11p01if-ztbu18062401.example.com
 
 # PV
-- pv34p01if-ztbu11014101.pv.if.example.com
-- pv34p01if-ztbu11021401.pv.if.example.com
-- pv34p01if-ztbu12094301.pv.if.example.com
+- pv34p01if-ztbu11014101.example.com
+- pv34p01if-ztbu11021401.example.com
+- pv34p01if-ztbu12094301.example.com
 
 - name: Key Authority VIPs
 command: nc -w 5 -z %(host)s %(port)d
 port: 443
 hosts:
-- keyauthorityvip.nk.if.example.com
-- keyauthorityvip.st.if.example.com
-- keyauthorityvip.mr.if.example.com
-- keyauthorityvip.pv.if.example.com
+- keyauthorityvip.example.com
+- keyauthorityvip.example.com
+- keyauthorityvip.example.com
+- keyauthorityvip.example.com
 
-- name: Hubble TCP Receiver
+- name: Example TCP Receiver
 command: nc -w 5 -z %(host)s %(port)d
 port: 9500
 hosts:
-- nk11p01if-hblrcvr-stream.nk.if.example.com
-- st14p01if-hblrcvr-stream.st.if.example.com
-- mr11p01if-hblrcvr-stream.mr.if.example.com
-- pv31p01if-if-hblrcvr-stream.pv.if.example.com
+- nk11p01if-hblrcvr-stream.example.com
+- st14p01if-hblrcvr-stream.example.com
+- mr11p01if-hblrcvr-stream.example.com
+- pv31p01if-if-hblrcvr-stream.example.com
